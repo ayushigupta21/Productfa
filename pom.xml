@@ -8,13 +8,13 @@
 		<version>2.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.project.Product</groupId>
-	<artifactId>Product</artifactId>
+	<groupId>com.project</groupId>
+	<artifactId>Order</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Product</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Order</name>
+	<description>Infosys FA4 project</description>
 	<properties>
-		<java.version>1.8</java.version>
+		  <java.version>1.8</java.version>
 		 <sonar.host.url>${sonar.host.url}</sonar.host.url>
         <sonar.organization>${sonar.organization}</sonar.organization>
         <sonar.projectKey>${sonar.projectKey}</sonar.projectKey>
@@ -32,11 +32,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>aws-java-sdk-s3</artifactId>
-            <version>1.11.549</version>
-        </dependency>
+		  <dependency>
+            		<groupId>com.amazonaws</groupId>
+            		<artifactId>aws-java-sdk-s3</artifactId>
+            		<version>1.11.549</version>
+        	</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -46,8 +46,8 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
+      </dependency>
+         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.8.0-M1</version>
@@ -66,7 +66,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
+<plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.3.0.603</version>
@@ -124,8 +124,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 
-            </plugin>
-			
+            </plugin>  
 		</plugins>
 	</build>
 <repositories>
